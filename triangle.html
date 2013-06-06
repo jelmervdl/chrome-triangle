@@ -1,0 +1,40 @@
+<html>
+	<head>
+		<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		#controls {
+			position: fixed;
+			top: 0;
+			left: 0;
+			color: black;
+			font: 1em/1em Helvetica;
+			display: none;
+		}
+
+		#controls label {
+			padding: .5em;
+			display: block;
+		}
+
+		#controls input {
+			height: 1em;
+			font-size: 1em;
+		}
+
+		</style>
+		<script src="triangle.js"></script>
+	</head>
+	<body>
+		<canvas id="canvas"></canvas>
+		<div id="controls">
+			<label>W: <input type="range" id="w" min="0" max="200" value="50"></label>
+			<label>D: <input type="range" id="d" min="0" max="100" value="60"></label>
+			<label>R: <input type="range" id="r" min="0" max="1" step="0.001" value="1/4"></label>
+			<label>N: <input type="range" id="n" min="3" max="10" value="3"></label>
+		</div>
+	</body>
+</html>

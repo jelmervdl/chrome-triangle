@@ -1,0 +1,11 @@
+{
+  // Required
+  "name": "Triangle",
+  "version": "1.0",
+  "manifest_version": 2,
+
+  // Add any of these that you need
+  "chrome_url_overrides" : {
+    "newtab": "triangle.html"
+  }
+}
