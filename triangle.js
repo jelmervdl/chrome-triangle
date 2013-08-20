@@ -105,8 +105,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
 	function resize()
 	{
-		canvas.width = window.innerWidth;
-		canvas.height = window.innerHeight;
+		canvas.width = 2 * window.innerWidth;
+		canvas.height = 2 * window.innerHeight;
 
 		display();
 	}
@@ -141,8 +141,8 @@ document.addEventListener('DOMContentLoaded', function() {
 	{
 		var r = smooth(0, 1, 120000, t),
 			n = 3,
-			d = smooth(0, 150, 10000, t),
-			w = smooth(10, 150, 15000, t);
+			d = smooth(0, canvas.height / 10, 10000, t),
+			w = smooth(10, canvas.height / 10, 15000, t);
 
 		ctx.clearRect(0, 0, canvas.width, canvas.height);
 		axis(canvas.width / 2, canvas.height / 2, r, d, w, n);
